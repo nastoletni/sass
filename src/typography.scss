@@ -1,0 +1,40 @@
+html {
+	background: #f3f3f3;
+	color: #333;
+	font: 16px Source Sans Pro, Arial, sans-serif;
+	text-align: justify;
+}
+
+a {
+	color: $primaryColor;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+ul, ol {
+	list-style-position: inside;
+}
+
+.big-title {
+    display: block;
+    margin-bottom: 30px;
+	
+    font-size: 54px;
+    text-align: center;
+}
+
+.medium-title {
+	display: block;
+	margin-bottom: 30px;
+	
+	font-size: 36px;
+}
+
+.lead {
+	margin-bottom: 30px;
+
+	font-size: 24px;
+}

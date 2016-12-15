@@ -1,0 +1,44 @@
+.counter {
+    counter-reset: rules;
+    
+    list-style: none;
+    text-align: left;
+
+    li {
+        position: relative;
+        padding: 10px 20px 10px 60px;
+
+        line-height: 20px;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &:target {
+            background: #f3f3f3;
+
+            &:before {
+                background: #ee1d23;
+            }
+        }
+
+        &:before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            content: counter(rules);
+            counter-increment: rules;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 100%;
+
+            background: $primaryColor;
+            color: #fff;
+            line-height: 40px;
+        }
+    }
+}

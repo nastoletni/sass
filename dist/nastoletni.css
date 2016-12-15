@@ -1,0 +1,238 @@
+.footer > div, .main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 1921px) {
+  .footer > div {
+    max-width: 1600px;
+  }
+}
+
+.panel {
+  box-shadow: 0 3px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+*, :before, :after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    flex-direction: column;
+  }
+}
+
+.grid > * {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 800px) {
+  .grid > *:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+html {
+  background: #f3f3f3;
+  color: #333;
+  font: 16px Source Sans Pro, Arial, sans-serif;
+  text-align: justify;
+}
+
+a {
+  color: #34495e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+
+.big-title {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 54px;
+  text-align: center;
+}
+
+.medium-title {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.lead {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.embed-16by9 {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+}
+
+.embed-16by9 > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-header, .hero-header-a a {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px;
+  background: #34495e url("http://nastoletni.pl/wp-content/themes/nastoletnitheme/imgs/header.jpg") center/cover;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .hero-header, .hero-header-a a {
+    flex-direction: column-reverse;
+  }
+}
+
+.hero-header:hover, .hero-header-a a:hover {
+  text-decoration: none;
+}
+
+.hero-header h1, .hero-header-a a h1 {
+  line-height: 68px;
+  font-size: 88px;
+}
+
+@media (max-width: 800px) {
+  .hero-header h1, .hero-header-a a h1 {
+    line-height: 34px;
+    text-align: center;
+    font-size: 46px;
+  }
+}
+
+.hero-header img, .hero-header-a a img {
+  height: 130px;
+}
+
+@media (min-width: 800px) {
+  .hero-header img, .hero-header-a a img {
+    height: 200px;
+    margin-right: 28px;
+  }
+}
+
+.main {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.main :not(:last-child):not(li) {
+  margin-bottom: 15px;
+}
+
+.panel {
+  background: #fff;
+}
+
+.panel-content {
+  padding: 15px;
+}
+
+.panel-content :not(:last-child):not(li) {
+  margin-bottom: 15px;
+}
+
+.counter {
+  counter-reset: rules;
+  list-style: none;
+  text-align: left;
+}
+
+.counter li {
+  position: relative;
+  padding: 10px 20px 10px 60px;
+  line-height: 20px;
+}
+
+.counter li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.counter li:target {
+  background: #f3f3f3;
+}
+
+.counter li:target:before {
+  background: #ee1d23;
+}
+
+.counter li:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: counter(rules);
+  counter-increment: rules;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  background: #34495e;
+  color: #fff;
+  line-height: 40px;
+}
+
+.footer {
+  padding: 30px 0;
+}
+
+.footer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer > div p {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.footer > div ul {
+  display: flex;
+  list-style: none;
+}
+
+.footer > div ul li:not(:first-child) {
+  margin-left: 15px;
+}

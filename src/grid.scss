@@ -1,0 +1,21 @@
+.grid {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 0 !important;
+
+    @media (max-width: $mobileWidth) {
+        flex-direction: column;
+    }
+
+    > * {
+        flex: 1;
+        margin-bottom: 15px;
+
+        @media (min-width: $mobileWidth) {
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+    }
+}

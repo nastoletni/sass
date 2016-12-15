@@ -1,0 +1,13 @@
+.panel {
+    @extend %shadow;
+    
+    background: #fff;
+
+    &-content {
+        padding: 15px;
+        
+        :not(:last-child):not(li) {
+            margin-bottom: 15px;
+        }
+    }
+}
