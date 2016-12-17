@@ -1,0 +1,29 @@
+.pagination {
+    text-align: center;
+    
+    .screen-reader-text {
+        @extend %hidden;
+    }
+
+    .nav-links {
+        @extend %shadow;
+
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        list-style: none;
+
+        a {
+            padding: 10px 15px;
+            color: #fff;
+            background: $primaryColor;
+        }
+
+        .current {
+            padding: 10px 15px;
+            color: $primaryColor;
+            background: #fff;
+        }
+    }
+}

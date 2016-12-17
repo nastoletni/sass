@@ -1,0 +1,45 @@
+.nav {
+    background: $primaryColor;
+
+    h3, input, label {
+        @extend %hidden;
+    }
+
+    ul {
+        @extend %container;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        list-style: none;
+
+        li {
+            flex: 1 auto;
+            
+            &.current-menu-item a {
+                color: $primaryColor;
+                background: #f3f3f3;
+
+                &:hover, &:focus, &:active {
+                    background: #f3f3f3;
+                }
+            }
+
+            a {
+                display: block;
+                padding: 15px;
+                
+                color: #fff;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+                transition: .3s all;
+
+                &:hover, &:focus, &:active {
+                    background: darken($primaryColor, 15%);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

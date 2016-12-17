@@ -1,7 +1,7 @@
 html {
 	background: #f3f3f3;
 	color: #333;
-	font: 16px Source Sans Pro, Arial, sans-serif;
+	font: 16px/1.5 Source Sans Pro, Arial, sans-serif;
 	text-align: justify;
 }
 
@@ -37,4 +37,18 @@ ul, ol {
 	margin-bottom: 30px;
 
 	font-size: 24px;
+}
+
+.alignright {
+	float: right;
+	margin: 5px 0 5px 5px;
+}
+
+.alignleft {
+	float: left;
+	margin: 5px 5px 5px 0;
+}
+
+.aligncenter {
+	text-align: center;
 }

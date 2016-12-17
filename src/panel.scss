@@ -3,11 +3,51 @@
     
     background: #fff;
 
-    &-content {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
         padding: 15px;
+
+        &-title {
+            margin-bottom: 0;
+
+            font-size: 24px;
+        }
+
+        &-meta {
+            margin-left: 15px;
+
+            list-style: none;
+            color: $mutedColor;
+            text-align: right;
+
+            li {
+                display: inline-block;
+            }
+        }
+    }
+
+    &-content {
+        position: relative;
+        // 15px (margin bottom for elements) + 44px (button height) + 15px (padding bottom) = 74px
+        padding: 15px 15px 74px;
         
         :not(:last-child):not(li) {
             margin-bottom: 15px;
+        }
+
+        .more-link {
+            @extend .primary-button;
+
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
         }
     }
 }
