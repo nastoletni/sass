@@ -34,20 +34,12 @@
     }
 
     &-content {
-        position: relative;
-        // 15px (margin bottom for elements) + 44px (button height) + 15px (padding bottom) = 74px
-        padding: 15px 15px 74px;
-        
         :not(:last-child):not(li) {
             margin-bottom: 15px;
         }
 
         .more-link {
             @extend .primary-button;
-
-            position: absolute;
-            right: 15px;
-            bottom: 15px;
         }
     }
 }
