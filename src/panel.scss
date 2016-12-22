@@ -36,7 +36,7 @@
     &-content {
         padding: 15px;
 
-        :not(:last-child):not(li) {
+        :not(:last-child):not(li):not(.gist-data):not([href^="https://gist.github.com"]) {
             margin-bottom: 15px;
         }
 

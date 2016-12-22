@@ -283,7 +283,7 @@ code {
   padding: 15px;
 }
 
-.panel-content :not(:last-child):not(li) {
+.panel-content :not(:last-child):not(li):not(.gist-data):not([href^="https://gist.github.com"]) {
   margin-bottom: 15px;
 }
 
