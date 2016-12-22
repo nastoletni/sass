@@ -24,6 +24,14 @@ blockquote {
 	color: #555;
 }
 
+code { // From Bootstrap 3
+    border-radius: 4px;
+	padding: 2px 4px;
+    font: 90% monospace;
+    color: #c7254e;
+    background: #f9f2f4;
+}
+
 .big-title {
     display: block;
     margin-bottom: 30px;
