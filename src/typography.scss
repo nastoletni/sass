@@ -32,6 +32,10 @@ code { // From Bootstrap 3
     background: #f9f2f4;
 }
 
+ul ul, ol ol, ul ol, ol ul {
+    margin-left: 15px;
+}
+
 .big-title {
     display: block;
     margin-bottom: 30px;
