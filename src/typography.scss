@@ -59,14 +59,24 @@ ul ul, ol ol, ul ol, ol ul {
 
 .alignright {
 	float: right;
-	margin: 5px 0 5px 5px;
+	
+	@at-root img.alignright {
+		margin: 5px 0 5px 5px;
+	}
 }
 
 .alignleft {
 	float: left;
-	margin: 5px 5px 5px 0;
+	
+	@at-root img.alignleft {
+		margin: 5px 5px 5px 0;
+	}
 }
 
 .aligncenter {
-	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+
 }
