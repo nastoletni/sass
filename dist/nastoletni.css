@@ -292,7 +292,7 @@ img.alignleft {
   display: inline-block;
 }
 
-.panel-image {
+.panel-image img {
   width: 100%;
 }
 
