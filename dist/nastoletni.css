@@ -40,6 +40,7 @@ html {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .grid {
@@ -289,6 +290,10 @@ img.alignleft {
 
 .panel-header-meta li {
   display: inline-block;
+}
+
+.panel-image {
+  width: 100%;
 }
 
 .panel-content {

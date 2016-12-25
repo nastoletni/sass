@@ -33,6 +33,10 @@
         }
     }
 
+    &-image {
+        width: 100%;
+    }
+
     &-content {
         @extend %clearfix;
 
