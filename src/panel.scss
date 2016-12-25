@@ -34,6 +34,8 @@
     }
 
     &-content {
+        @extend %clearfix;
+
         padding: 15px;
 
         :not(:last-child):not(li):not(.gist-data):not([href^="https://gist.github.com"]) {
