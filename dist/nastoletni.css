@@ -88,9 +88,10 @@ ul, ol {
 }
 
 blockquote {
-  border-left: 3px solid #555;
-  padding-left: 15px;
+  border-left: 5px solid #555;
+  padding: 5px 15px;
   color: #555;
+  background: #ddd;
 }
 
 code {
@@ -121,6 +122,12 @@ ul ul, ol ol, ul ol, ol ul {
 .lead {
   margin-bottom: 30px;
   font-size: 24px;
+}
+
+.note {
+  border-left: 5px solid #34495e;
+  padding: 5px 15px;
+  background: #b9c9d8;
 }
 
 .alignright {
