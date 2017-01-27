@@ -384,7 +384,7 @@ img.alignleft {
   background: #34495e;
 }
 
-.pagination .nav-links .current {
+.pagination .nav-links .current, .pagination .nav-links .dots {
   padding: 10px 15px;
   color: #34495e;
   background: #fff;
