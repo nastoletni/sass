@@ -1,4 +1,4 @@
-.footer > div, .nav ul, .main {
+.footer > div, .nav ul, .navbar div, .main {
   margin-left: auto;
   margin-right: auto;
   max-width: 1170px;
@@ -12,7 +12,7 @@
   }
 }
 
-.nav h3, .nav input, .nav label, .pagination .screen-reader-text {
+.nav h3, .nav input, .nav label, .navbar div nav h2, .pagination .screen-reader-text {
   position: absolute;
   clip: rect(0, 0, 0, 0);
 }
@@ -258,6 +258,54 @@ img.alignleft {
 }
 
 .nav ul li a:hover, .nav ul li a:focus, .nav ul li a:active {
+  background: #19232d;
+  text-decoration: none;
+}
+
+.navbar {
+  line-height: 80px;
+  color: #fff;
+  background: #34495e;
+}
+
+.navbar div {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  .navbar div {
+    flex-direction: row;
+  }
+}
+
+.navbar div h1 {
+  display: flex;
+  align-items: center;
+  line-height: 1.1;
+}
+
+.navbar div h1 img {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+
+.navbar div nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar div nav ul a {
+  display: block;
+  padding: 0 30px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar div nav ul a:hover, .navbar div nav ul a:active, .navbar div nav ul a:focus {
   background: #19232d;
   text-decoration: none;
 }
