@@ -3,15 +3,19 @@
     color: #fff;
     background: $primaryColor;
 
+    @media (max-width: $mobileWidth) {
+        margin-top: 15px;
+    }
+
     div {
         @extend %container;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
 
-        @media (min-width: $mobileWidth) {
-            flex-direction: row;
+        @media (max-width: $mobileWidth) {
+            flex-direction: column;
         }
 
         h1 {

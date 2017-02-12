@@ -268,16 +268,22 @@ img.alignleft {
   background: #34495e;
 }
 
+@media (max-width: 800px) {
+  .navbar {
+    margin-top: 15px;
+  }
+}
+
 .navbar div {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   .navbar div {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
@@ -455,6 +461,8 @@ img.alignleft {
 
 .footer > div ul {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   list-style: none;
 }
 
