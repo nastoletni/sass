@@ -12,7 +12,7 @@
   }
 }
 
-.nav h3, .nav input, .nav label, .navbar div nav h2, .pagination .screen-reader-text {
+.nav h3, .nav input, .nav label, .navbar div nav h2, .table-of-contents h2, .pagination .screen-reader-text {
   position: absolute;
   clip: rect(0, 0, 0, 0);
 }
@@ -403,6 +403,32 @@ img.alignleft {
   background: #34495e;
   color: #fff;
   line-height: 40px;
+}
+
+.table-of-contents {
+  margin-bottom: 10px;
+}
+
+.table-of-contents > ol {
+  columns: 2 5px;
+  list-style: none;
+}
+
+@media (min-width: 800px) {
+  .table-of-contents > ol {
+    column-count: 4;
+  }
+}
+
+.table-of-contents > ol > li {
+  break-inside: avoid;
+  border-bottom: 5px solid #f3f3f3;
+  padding: 10px 15px;
+  background: #34495e;
+}
+
+.table-of-contents > ol > li a {
+  color: #fff;
 }
 
 .bio {

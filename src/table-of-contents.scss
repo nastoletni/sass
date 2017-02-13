@@ -1,0 +1,28 @@
+.table-of-contents {
+    margin-bottom: 10px;
+
+    h2 {
+        @extend %hidden;
+    }
+
+    > ol {
+        columns: 2 5px;
+        list-style: none;
+
+        @media (min-width: $mobileWidth) {
+            column-count: 4;
+        }
+
+        > li {
+            break-inside: avoid;
+
+            border-bottom: 5px solid #f3f3f3;
+            padding: 10px 15px;
+            background: $primaryColor;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
