@@ -38,7 +38,7 @@ html {
   box-sizing: border-box;
 }
 
-img {
+img, .wp-caption {
   max-width: 100%;
   height: auto;
 }
