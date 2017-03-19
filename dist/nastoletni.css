@@ -433,6 +433,11 @@ img.alignleft {
   color: #fff;
 }
 
+.table-of-contents > ol > li a:hover, .table-of-contents > ol > li a:focus {
+  background: #19232d;
+  text-decoration: none;
+}
+
 .bio {
   padding: 15px;
   background: #ddd;
