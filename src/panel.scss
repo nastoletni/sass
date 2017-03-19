@@ -1,6 +1,9 @@
 .panel {
     @extend %shadow;
-    
+
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-image: linear-gradient(to right, #34495e, #9b59b6, #3498db, #1abc9c) 1;
     background: #fff;
 
     &:not(:last-child) {
