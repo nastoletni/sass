@@ -17,10 +17,11 @@
             break-inside: avoid;
 
             border-bottom: 5px solid #f3f3f3;
-            padding: 10px 15px;
             background: $primaryColor;
 
             a {
+                display: block;
+                padding: 10px 15px;
                 color: #fff;
             }
         }

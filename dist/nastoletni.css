@@ -424,11 +424,12 @@ img.alignleft {
 .table-of-contents > ol > li {
   break-inside: avoid;
   border-bottom: 5px solid #f3f3f3;
-  padding: 10px 15px;
   background: #34495e;
 }
 
 .table-of-contents > ol > li a {
+  display: block;
+  padding: 10px 15px;
   color: #fff;
 }
 
