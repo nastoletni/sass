@@ -83,14 +83,23 @@ img, .wp-caption {
   }
 }
 
+.main-container .main-container--element {
+  flex: 1;
+}
+
 .main-container .main-container--sidebar {
   flex: 0 0 270px;
-  margin-left: 15px;
 }
 
 @media (max-width: 800px) {
   .main-container .main-container--sidebar {
     margin-top: 30px;
+  }
+}
+
+@media (min-width: 800px) {
+  .main-container .main-container--sidebar {
+    margin-left: 15px;
   }
 }
 

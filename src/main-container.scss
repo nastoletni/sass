@@ -6,12 +6,19 @@
         flex-direction: column;
     }
 
+    .main-container--element {
+        flex: 1;
+    }
+
     .main-container--sidebar {
         flex: 0 0 $sidebarWidth;
-        margin-left: 15px;
 
         @media (max-width: $mobileWidth) {
             margin-top: 30px;
+        }
+
+        @media (min-width: $mobileWidth) {
+            margin-left: 15px;
         }
     }
 }
