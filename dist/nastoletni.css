@@ -44,6 +44,10 @@ img, .wp-caption {
   height: auto;
 }
 
+.discord-iframe {
+  width: 100%;
+}
+
 .grid {
   display: flex;
   flex-flow: row nowrap;
@@ -65,6 +69,28 @@ img, .wp-caption {
 @media (min-width: 800px) {
   .grid > *:not(:last-child) {
     margin-right: 15px;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+@media (max-width: 800px) {
+  .main-container {
+    flex-direction: column;
+  }
+}
+
+.main-container .main-container--sidebar {
+  flex: 0 0 270px;
+  margin-left: 15px;
+}
+
+@media (max-width: 800px) {
+  .main-container .main-container--sidebar {
+    margin-top: 30px;
   }
 }
 
@@ -478,6 +504,22 @@ img.alignleft {
   padding: 10px 15px;
   color: #34495e;
   background: #fff;
+}
+
+@supports (position: sticky) {
+  @media (min-width: 800px) {
+    .sidebar {
+      position: sticky;
+      top: 15px;
+      bottom: 15px;
+      max-height: calc(100vh - 30px);
+      overflow-y: auto;
+    }
+    .admin-bar .sidebar {
+      top: 47px;
+      max-height: calc(100vh - 62px);
+    }
+  }
 }
 
 .footer {

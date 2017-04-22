@@ -1,0 +1,17 @@
+.sidebar {
+    @supports (position: sticky) {
+        @media (min-width: $mobileWidth) {
+            position: sticky;
+            top: 15px;
+            bottom: 15px;
+
+            max-height: calc(100vh - 30px);
+            overflow-y: auto;
+
+            @at-root .admin-bar & {
+                top: 47px;
+                max-height: calc(100vh - 62px);
+            }
+        }
+    }
+}

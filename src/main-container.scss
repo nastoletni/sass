@@ -1,0 +1,17 @@
+.main-container {
+    display: flex;
+    flex-flow: row nowrap;
+
+    @media (max-width: $mobileWidth) {
+        flex-direction: column;
+    }
+
+    .main-container--sidebar {
+        flex: 0 0 $sidebarWidth;
+        margin-left: 15px;
+
+        @media (max-width: $mobileWidth) {
+            margin-top: 30px;
+        }
+    }
+}
