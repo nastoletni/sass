@@ -9,6 +9,7 @@ gulp.task('default', () => {
                .pipe(sass({
                    outputStyle: 'expanded'
                }).on('error', sass.logError))
+               .pipe(autoprefixer())
                .pipe(rename({
                    basename: "nastoletni"
                 }))
