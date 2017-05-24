@@ -1,0 +1,57 @@
+.code-form {
+  //
+
+  &--label {
+    display: inline-block;
+    margin-bottom: 3px !important;
+    font-weight: bold;
+  }
+
+  &--control {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px 15px;
+    font: inherit;
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__textarea {
+      resize: vertical;
+    }
+  }
+
+  &--file {
+    margin-bottom: 30px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 20px 0 0;
+  }
+
+  &--button-group {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &--button {
+    appearance: none;
+    margin-left: 15px;
+    margin-bottom: 0 !important; // FIXME: normalize.css and remove margin-bottom from .panel for fuck sake
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px 15px;
+    background: #eee;
+    font: inherit;
+    transition: .3s background;
+    cursor: pointer;
+
+    &__submit {
+      border-color: darken($primaryColor, 15%);
+      background: $primaryColor;
+      color: #fff;
+    }
+  }
+}
