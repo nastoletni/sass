@@ -10,6 +10,8 @@
 
         @media (max-width: $smallBreakpoint) {
             flex-direction: column;
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 
@@ -23,6 +25,10 @@
         color: #fff;
         text-align: center;
         transition: .3s background;
+
+        @media (max-width: $smallBreakpoint) {
+            padding: 5px 30px;
+        }
 
         &:hover, &:focus {
             background: darken($primaryColor, 15%);
@@ -59,7 +65,7 @@
     }
 
     &--links-item {
-        //
+        flex: 1;
     }
 
     &--link {
@@ -67,6 +73,7 @@
         padding: 0 15px;
         color: #fff;
         text-decoration: none;
+        text-align: center;
         transition: .3s background;
 
         &__current {
