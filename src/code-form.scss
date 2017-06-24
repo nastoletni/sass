@@ -1,6 +1,13 @@
 .code-form {
   //
 
+  &--error {
+    margin: -10px 0 15px;
+    padding: 10px 15px;
+    background: $errorColor;
+    color: #fff;
+  }
+
   &--label {
     display: inline-block;
     margin-bottom: 3px !important;
