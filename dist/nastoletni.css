@@ -711,6 +711,19 @@ img.alignleft {
   text-align: right;
 }
 
+.code-file {
+  border-top-width: 0;
+}
+
+.code-file--header {
+  position: sticky;
+  top: 0;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-image: linear-gradient(to right, #34495e, #9b59b6, #3498db, #1abc9c) 1;
+  background: #fff;
+}
+
 .code-paste-content {
   border-radius: 0;
 }

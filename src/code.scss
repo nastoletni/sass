@@ -98,6 +98,19 @@
   }
 }
 
+.code-file {
+  border-top-width: 0;
+
+  &--header {
+    position: sticky;
+    top: 0;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-image: $panelBorderGradient 1;
+    background: #fff;
+  }
+}
+
 .code-paste-content {
   border-radius: 0;
 }
