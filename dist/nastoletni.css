@@ -355,10 +355,6 @@ img.alignleft {
   list-style: none;
 }
 
-.page-navbar-nav--links-item {
-  flex: 1;
-}
-
 .page-navbar-nav--link {
   display: block;
   padding: 0 15px;
