@@ -1,6 +1,9 @@
 .panel {
     @extend %shadow;
 
+    // Reset for Safari
+    border-width: 0;
+
     border-top-width: 3px;
     border-top-style: solid;
     border-image: $panelBorderGradient 1;
